@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/navbar.css" />
+		<title>navigation bar</title>
+	</head>
+	<body>
+		<nav>
+			<div>
+				<ul>
+					<a href="index.html" class="home"
+						><img src="res/items/Starview.png" alt=""
+					/></a>
+					<li id="loginMenu" class="notlog">
+						<a href="#" id="login" data-toggle="modal" data-target="#loginModal"
+							><img src="res/items/login.png" alt="login"
+						/></a>
+					</li>
+					<li id="registerMenu" class="notlog">
+						<a
+							href="#"
+							id="register"
+							data-toggle="modal"
+							data-target="#registerModal"
+							><img src="res/items/register.png" alt="register"
+						/></a>
+					</li>
+
+					<li id="editMenu" style="display: none" class="log">
+						<a href="edit.html"
+							><img src="res/items/profile.png" alt="logout"
+						/></a>
+					</li>
+
+					<li>
+						<a href="search.html"
+							><img src="res/items/search.png" alt="search"
+						/></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</body>
+
+	<script src="js/checkToken.js"></script>
+	<script src="js/register.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/logout.js"></script>
+	<script src="js/w3.js"></script>
+	<script>
+		//to bring in other HTML on the fly into this page
+		w3.includeHTML();
+	</script>
+</html>

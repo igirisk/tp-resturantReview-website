@@ -1,0 +1,76 @@
+<div class="modal fade" id="editReviewModal" style="z-index: 9999">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header bg-dark text-center">
+				<h3 class="modal-title text-light">Edit a Review</h3>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">
+					&times;
+				</button>
+			</div>
+			<div class="modal-body px-5">
+				<form id="reviewForm1">
+					<div class="row" text-center id="editreviewBody">
+						<label for="username">User id</label>
+						<input
+							type="text"
+							id="editusername"
+							class="form-control"
+							required
+						/>
+						<label for="userReviews">Review</label>
+						<textarea
+							id="edituserReviews"
+							required
+							class="form-control form-rounded"
+							rows="3"
+							cols="100%"
+						></textarea>
+						<label for="star">Review</label>
+						<img
+							src="res/items/starBW.png"
+							class="editpop"
+							value="1"
+							onmouseover="rateIt(this)"
+						/>
+						<img
+							src="res/items/starBW.png"
+							class="editpop"
+							value="2"
+							onmouseover="rateIt(this)"
+						/>
+						<img
+							src="res/items/starBW.png"
+							class="editpop"
+							value="3"
+							onmouseover="rateIt(this)"
+						/>
+						<img
+							src="res/items/starBW.png"
+							class="editpop"
+							value="4"
+							onmouseover="rateIt(this)"
+						/>
+						<img
+							src="res/items/starBW.png"
+							class="editpop"
+							value="5"
+							onmouseover="rateIt(this)"
+						/>
+					</div>
+
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-dismiss="modal"
+							id="submitReview1"
+							onClick="updateReview()"
+						>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
